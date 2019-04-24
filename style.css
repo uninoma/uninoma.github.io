@@ -88,6 +88,7 @@ svg{
 }
 #dataShow{
  font-family:"Courier New", Courier, monospace;
+ font-size:1.5em;
  padding-top:12px;
  padding-left:12px;
  margin-left: 10%;
@@ -95,7 +96,6 @@ svg{
  background: black;
  color:#C3FFC2;
  width: 88%;
- height: 80%;
  border:5px solid #1A7000;
  border-radius:40px 28px 40px 120px;
 }
