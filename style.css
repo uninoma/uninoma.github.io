@@ -9,9 +9,8 @@ body{
 }
 div.main{
   border-radius: 20px;
-  width:80%;
   display: grid;
-  grid-template-columns:1fr 4fr;
+  grid-template-columns:.4fr 4fr;
   grid-template-rows:auto auto auto;
   grid-template-areas:  "row1 content"
                         "row2 content"
@@ -28,7 +27,6 @@ div.main{
 .main>.row2{
   margin-top: 20px;
   grid-area:row2;
-  width: 27%;
   margin-left: auto;
   margin-right: 9%;
 }
@@ -42,24 +40,18 @@ div.main{
 }
 
 .tabs>div{
-  margin-top: 2px;
-  height:70px;
-  width:135px;
+  margin-top: 2px;    
   background: url("./images/tag.svg");
   background-size:170% 100%;
   background-repeat: no-repeat;
-  
 }
 
 .tabs>div>h4{
-    padding: 8px;
-    margin-left: 7%;
+    padding: 5%;
     font-family:"Courier New", Courier, monospace;
-    font-size:80%;
-    background-color: green;
-    background-image: linear-gradient(315deg, green 0%, blue 94%);
-    width:10%;
-    border-radius: 11px
+    font-size:20px;
+    border-radius: 11px;
+    margin-right: 50px;
 }
 
 svg{
@@ -88,8 +80,9 @@ svg{
 }
 #dataShow{
  font-family:"Courier New", Courier, monospace;
- font-size:1.5em;
- padding-top:12px;
+ font-size:2vw;
+ margin-top:12px;
+ margin-bottom: 72px;
  padding-left:12px;
  margin-left: 10%;
  flex:2;
@@ -98,4 +91,26 @@ svg{
  width: 88%;
  border:5px solid #1A7000;
  border-radius:40px 28px 40px 120px;
+}
+
+@media only screen and (max-width: 400px) {
+    .main>.content{
+        flex-direction:column-reverse;
+    }
+    .contentHead{
+
+    }
+    #dataShow{
+        width:80%;
+        font-size:100%;
+        padding-bottom: 20%;
+    }
+    .tabs>div{
+
+    }
+    
+    .tabs>div>h4{
+        margin: 12px;
+        font-size:10px;
+    }
 }
