@@ -3,14 +3,13 @@ body{
   justify-content: center;
   background-color:#001433;
   color:white;
-    background-color: #0cbaba;
-    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    background-color: #000;
 
 }
 div.main{
   border-radius: 20px;
   display: grid;
-  grid-template-columns:.4fr 4fr;
+  grid-template-columns:1fr 4fr;
   grid-template-rows:auto auto auto;
   grid-template-areas:  "row1 content"
                         "row2 content"
@@ -30,13 +29,13 @@ div.main{
   margin-left: auto;
   margin-right: 9%;
 }
-.title{
-    margin: 5px;
-    border-radius: 20px;
-    border: 2px solid red;
-    background: black;
-    height: 10%;
-}
+.circle{
+    border-radius: 50px;
+    border: 6px solid green;
+    background: green;
+    height: 50px;
+    width:50px;
+    }
 
 .tabs{
     display: flex;
@@ -81,12 +80,12 @@ svg{
 
 .contentHead{
     border-radius: 43px 10px 0 0px;
-    width: auto;
+    width: 100%;
     flex:1;
 }
 #dataShow{
  font-family:"Courier New", Courier, monospace;
- font-size:2vw;
+ font-size:20px;
  margin-top:12px;
  margin-bottom: 72px;
  padding-left:12px;
@@ -98,25 +97,49 @@ svg{
  border:5px solid #1A7000;
  border-radius:40px 28px 40px 120px;
 }
-
-@media only screen and (max-width: 400px) {
+#talkbubble {
+      width: 120px;
+      height: 80px;
+      background: #1A7000;
+      position: relative;
+      left: 20px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+    #talkbubble:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 26px;
+      width: 0;
+      height: 0;
+      border-top: 13px solid transparent;
+      border-right: 26px solid #1A7000;
+      border-bottom: 13px solid transparent;
+    }
+@media screen and (max-width: 600px) {
     .main>.content{
         flex-direction:column-reverse;
     }
     .contentHead{
-
+        flex:1;
     }
     #dataShow{
+        flex:5;
         width:80%;
         font-size:100%;
         padding-bottom: 20%;
     }
     .tabs>div{
-
+        
     }
     
     .tabs>div>h4{
-        margin: 12px;
+        position: relative;
+        right:12%;
+        margin: 17px;
+        font-size:10px;
         font-size:10px;
     }
 }
