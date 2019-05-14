@@ -28,7 +28,7 @@ div.main{
   grid-area:row2;
   margin-left: auto;
   margin-right: 9%;
-  max-width:10%;
+  max-width:25%;
 }
 .circle{
     border-radius: 50px;
