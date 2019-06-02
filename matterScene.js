@@ -11,18 +11,18 @@ export default class MatterScene extends Phaser.Scene{
     }
 
     preload(){
-        this.load.json('shapes','http://'+document.location.host+'/assets/shS_data.json')
+        this.load.json('shapes','//'+document.location.host+'/assets/shS_data.json')
 
-        this.load.image('door_blue', 'http://'+document.location.host+'/assets/door_blue.png');
-        this.load.image('door_green', 'http://'+document.location.host+'/assets/door_green.png');
-        this.load.image('door_red', 'http://'+document.location.host+'/assets/door_red.png');
-        this.load.image('door_yellow', 'http://'+document.location.host+'/assets/door_yellow.png');
-        this.load.image('romb', 'http://'+document.location.host+'/assets/romb.png');
+        this.load.image('door_blue', '//'+document.location.host+'/assets/door_blue.png');
+        this.load.image('door_green', '//'+document.location.host+'/assets/door_green.png');
+        this.load.image('door_red', '//'+document.location.host+'/assets/door_red.png');
+        this.load.image('door_yellow', '//'+document.location.host+'/assets/door_yellow.png');
+        this.load.image('romb', '//'+document.location.host+'/assets/romb.png');
 
-        this.load.image('ball', 'http://'+document.location.host+'/assets/ball.png');
+        this.load.image('ball', '//'+document.location.host+'/assets/ball.png');
 
         
-        this.load.image('s', 'http://'+document.location.host+'/assets/shapeS.png');        
+        this.load.image('s', '//'+document.location.host+'/assets/shapeS.png');        
         
 
 
